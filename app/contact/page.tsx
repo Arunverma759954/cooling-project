@@ -16,7 +16,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold">Phone</h4>
-                                    <p className="text-gray-500">+91-9717195161, +91-8800983600</p>
+                                    <p className="text-gray-500 font-medium">+91 9953666863</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-6">
@@ -25,7 +25,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold">Email</h4>
-                                    <p className="text-gray-500">info@coolingsolutions.in</p>
+                                    <p className="text-gray-500 font-medium">coolairsystem6863@gmail.com</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-6">
@@ -34,7 +34,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold">Office</h4>
-                                    <p className="text-gray-500">Delhi NCR, India</p>
+                                    <p className="text-gray-500 font-medium whitespace-pre-line">Shop No- 120, FF, Krishna Palace,{"\n"}Gurugram 122001</p>
                                 </div>
                             </div>
                         </div>

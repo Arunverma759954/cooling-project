@@ -44,20 +44,11 @@ export default function Navbar() {
                     {/* Brand Logo */}
                     <div className="shrink-0">
                         <Link href="/" className="flex items-center gap-3 group">
-                            <div className="relative w-40 h-10 bg-white px-3 py-1 transition-transform group-hover:scale-105">
-                                <Image
-                                    src="/log.png"
-                                    alt="Cool Air System logo"
-                                    width={160}
-                                    height={40}
-                                    className="object-contain w-full h-full"
-                                />
-                            </div>
-                            <div className="hidden sm:flex flex-col leading-tight">
-                                <span className="text-sm font-black tracking-[0.18em] text-primary uppercase">
+                            <div className="flex flex-col leading-tight">
+                                <span className="text-sm font-black tracking-[0.18em] text-red-600 uppercase">
                                     COOL AIR SYSTEM
                                 </span>
-                                <span className="text-[0.6rem] font-medium tracking-[0.16em] text-slate-500 uppercase">
+                                <span className="text-[0.6rem] font-medium tracking-[0.16em] text-black uppercase">
                                     Capitalizing HVAC Demands
                                 </span>
                             </div>
@@ -73,10 +64,10 @@ export default function Navbar() {
                         </div>
 
                         <Link
-                            href="tel:+919717195161"
+                            href="tel:+919953666863"
                             className="ml-6 px-8 py-3.5 rounded-xl font-black text-sm bg-royal text-white shadow-xl shadow-royal/20 transition-all duration-300 transform hover:scale-105 active:scale-95"
                         >
-                            +91 97171 95161
+                            +91 99536 66863
                         </Link>
                     </nav>
 
@@ -119,18 +110,16 @@ export default function Navbar() {
                             {link.label}
                         </Link>
                     ))}
-                    <div className="pt-4 border-t border-slate-100 mt-4">
-                        <Link
-                            href="tel:+919717195161"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className="flex items-center justify-center gap-3 px-6 py-4 bg-royal text-white font-black text-base rounded-xl shadow-lg shadow-royal/20 hover:shadow-xl transition-all"
-                        >
-                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                            </svg>
-                            +91 97171 95161
-                        </Link>
-                    </div>
+                    <Link
+                        href="tel:+919953666863"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className="flex items-center justify-center gap-3 px-6 py-4 bg-royal text-white font-black text-base rounded-xl shadow-lg shadow-royal/20 hover:shadow-xl transition-all"
+                    >
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        +91 99536 66863
+                    </Link>
                 </nav>
             </div>
         </header>
