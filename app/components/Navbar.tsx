@@ -34,32 +34,31 @@ export default function Navbar() {
 
     return (
         <header
-            className={`fixed w-full z-50 transition-all duration-500 ${isScrolled || isMobileMenuOpen
-                ? 'bg-white/95 backdrop-blur-xl border-b border-slate-200 py-3 shadow-lg shadow-slate-200/20'
-                : 'bg-gradient-to-b from-black/60 via-black/30 to-transparent py-5'
+            className={`fixed w-full z-50 bg-white/95 backdrop-blur-xl border-b border-slate-200 transition-all duration-500 ${isScrolled || isMobileMenuOpen
+                ? 'py-3 shadow-lg shadow-slate-200/40'
+                : 'py-5 shadow-sm shadow-slate-100/60'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
                     {/* Brand Logo */}
-                    <div className="flex-shrink-0">
-                        <Link href="/" className="flex items-center gap-4 group">
-                            <div className="relative w-12 h-12 bg-white rounded-2xl shadow-sm p-1.5 transition-transform group-hover:scale-110">
+                    <div className="shrink-0">
+                        <Link href="/" className="flex items-center gap-3 group">
+                            <div className="relative w-40 h-10 bg-white px-3 py-1 transition-transform group-hover:scale-105">
                                 <Image
-                                    src="/logo.png"
-                                    alt="Cooling Solutions Logo"
-                                    width={40}
+                                    src="/log.png"
+                                    alt="Cool Air System logo"
+                                    width={160}
                                     height={40}
-                                    className="object-contain"
+                                    className="object-contain w-full h-full"
                                 />
                             </div>
-                            <div className="flex flex-col">
-                                <span className={`text-2xl font-black tracking-tighter transition-colors duration-300 ${isScrolled || isMobileMenuOpen ? 'text-primary' : 'text-white'
-                                    }`}>
-                                    COOLING
+                            <div className="hidden sm:flex flex-col leading-tight">
+                                <span className="text-sm font-black tracking-[0.18em] text-primary uppercase">
+                                    COOL AIR SYSTEM
                                 </span>
-                                <span className="text-[0.65rem] font-black leading-none tracking-[0.3em] text-accent transition-colors duration-300">
-                                    SOLUTIONS
+                                <span className="text-[0.6rem] font-medium tracking-[0.16em] text-slate-500 uppercase">
+                                    Capitalizing HVAC Demands
                                 </span>
                             </div>
                         </Link>
@@ -67,8 +66,7 @@ export default function Navbar() {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center space-x-2">
-                        <div className={`flex items-center space-x-8 px-8 py-2.5 rounded-2xl transition-all duration-500 ${isScrolled ? 'bg-transparent' : 'bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl shadow-black/5'
-                            }`}>
+                        <div className="flex items-center space-x-8 px-8 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm shadow-slate-200/60 transition-all duration-500">
                             {navLinks.map((link) => (
                                 <NavLink key={link.href} href={link.href} label={link.label} isScrolled={isScrolled} />
                             ))}
@@ -76,10 +74,7 @@ export default function Navbar() {
 
                         <Link
                             href="tel:+919717195161"
-                            className={`ml-6 px-8 py-3.5 rounded-xl font-black text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${isScrolled
-                                    ? 'bg-royal text-white shadow-xl shadow-royal/20'
-                                    : 'bg-white text-primary shadow-2xl shadow-black/10'
-                                }`}
+                            className="ml-6 px-8 py-3.5 rounded-xl font-black text-sm bg-royal text-white shadow-xl shadow-royal/20 transition-all duration-300 transform hover:scale-105 active:scale-95"
                         >
                             +91 97171 95161
                         </Link>
@@ -89,7 +84,7 @@ export default function Navbar() {
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            className={`p-2 rounded-lg transition-colors ${isScrolled || isMobileMenuOpen ? 'text-primary' : 'text-white'
+                            className={`p-2 rounded-lg transition-colors ${isMobileMenuOpen ? 'text-royal' : 'text-primary'
                                 }`}
                             aria-label="Toggle Menu"
                             aria-expanded={isMobileMenuOpen}
@@ -146,14 +141,10 @@ function NavLink({ href, label, isScrolled }: { href: string; label: string; isS
     return (
         <Link
             href={href}
-            className={`relative group font-black text-[0.8rem] uppercase tracking-widest transition-all duration-300 
-                ${isScrolled
-                    ? 'text-primary hover:text-royal'
-                    : 'text-white hover:text-accent'}`}
+            className={`relative group font-black text-[0.8rem] uppercase tracking-widest transition-all duration-300 text-primary hover:text-royal`}
         >
             {label}
-            <span className={`absolute -bottom-1.5 left-0 w-0 h-0.5 transition-all duration-500 group-hover:w-full 
-                ${isScrolled ? 'bg-royal' : 'bg-accent shadow-[0_0_8px_rgba(56,189,248,0.6)]'}`} />
+            <span className="absolute -bottom-1.5 left-0 w-0 h-0.5 bg-royal transition-all duration-500 group-hover:w-full" />
         </Link>
     );
 }
