@@ -21,7 +21,7 @@ export default function Services() {
 
                 <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
                     <span className="text-accent font-black tracking-[0.3em] text-sm uppercase mb-6 block animate-fade-in-up">Our Services</span>
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-8 animate-reveal">
+                    <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-8 animate-reveal">
                         Comprehensive <span className="text-gradient-accent">HVAC</span> <br className="hidden md:block" /> Engineering Solutions
                     </h1>
                     <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto font-medium animate-fade-in-up delay-200">
@@ -35,13 +35,13 @@ export default function Services() {
             {/* ============================================================= */}
             <section id="central-plant" className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
                         <div>
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="text-accent font-black text-sm tracking-[0.2em] uppercase">01</span>
                                 <div className="h-px w-12 bg-accent/30"></div>
                             </div>
-                            <h2 className="text-3xl md:text-5xl font-black text-primary mb-8 leading-tight">Central Plant Equipment</h2>
+                            <h2 className="text-2xl md:text-4xl font-black text-primary mb-8 leading-tight">Central Plant Equipment</h2>
 
                             <div className="mb-10">
                                 <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-4">Overview</h4>
@@ -79,26 +79,11 @@ export default function Services() {
                             </Link>
                         </div>
 
-                        <div className="bg-muted p-10 rounded-[2.5rem] border border-slate-50 shadow-xl">
-                            <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-6">Benefits</h4>
-                            <div className="space-y-6">
-                                {[
-                                    { title: "High Energy Efficiency", desc: "Optimized central systems that significantly reduce operational energy consumption." },
-                                    { title: "Centralized Control", desc: "Single-point management of your entire climate infrastructure for streamlined operations." },
-                                    { title: "Long Operational Life", desc: "Industrial-grade components engineered for decades of reliable performance." },
-                                ].map((item, i) => (
-                                    <div key={i} className="flex gap-4 group">
-                                        <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-white flex items-center justify-center text-royal border border-slate-100 shadow-sm group-hover:bg-royal group-hover:text-white transition-all">
-                                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
-                                        </div>
-                                        <div>
-                                            <h5 className="font-black text-primary text-sm mb-1">{item.title}</h5>
-                                            <p className="text-xs text-slate-500 font-medium leading-relaxed">{item.desc}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+                        <ServiceBenefits items={[
+                            { title: "High Energy Efficiency", desc: "Optimized central systems that significantly reduce operational energy consumption." },
+                            { title: "Centralized Control", desc: "Single-point management of your entire climate infrastructure for streamlined operations." },
+                            { title: "Long Operational Life", desc: "Industrial-grade components engineered for decades of reliable performance." },
+                        ]} />
                     </div>
                 </div>
             </section>
@@ -110,13 +95,13 @@ export default function Services() {
             {/* ============================================================= */}
             <section id="ducted" className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-                        <div className="lg:order-2">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
+                        <div>
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="text-accent font-black text-sm tracking-[0.2em] uppercase">02</span>
                                 <div className="h-px w-12 bg-accent/30"></div>
                             </div>
-                            <h2 className="text-3xl md:text-5xl font-black text-primary mb-8 leading-tight">Ducted HVAC Systems</h2>
+                            <h2 className="text-2xl md:text-4xl font-black text-primary mb-8 leading-tight">Ducted HVAC Systems</h2>
 
                             <div className="mb-10">
                                 <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-4">Overview</h4>
@@ -154,26 +139,11 @@ export default function Services() {
                             </Link>
                         </div>
 
-                        <div className="lg:order-1 bg-muted p-10 rounded-[2.5rem] border border-slate-50 shadow-xl">
-                            <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-6">Benefits</h4>
-                            <div className="space-y-6">
-                                {[
-                                    { title: "Uniform Air Distribution", desc: "Consistent temperature and airflow across every zone in your facility." },
-                                    { title: "Low Noise Operation", desc: "Acoustically engineered systems that maintain a quiet, productive environment." },
-                                    { title: "Scalable Design", desc: "Modular duct networks that can be expanded as your facility grows." },
-                                ].map((item, i) => (
-                                    <div key={i} className="flex gap-4 group">
-                                        <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-white flex items-center justify-center text-royal border border-slate-100 shadow-sm group-hover:bg-royal group-hover:text-white transition-all">
-                                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
-                                        </div>
-                                        <div>
-                                            <h5 className="font-black text-primary text-sm mb-1">{item.title}</h5>
-                                            <p className="text-xs text-slate-500 font-medium leading-relaxed">{item.desc}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+                        <ServiceBenefits items={[
+                            { title: "Uniform Air Distribution", desc: "Consistent temperature and airflow across every zone in your facility." },
+                            { title: "Low Noise Operation", desc: "Acoustically engineered systems that maintain a quiet, productive environment." },
+                            { title: "Scalable Design", desc: "Modular duct networks that can be expanded as your facility grows." },
+                        ]} />
                     </div>
                 </div>
             </section>
@@ -185,13 +155,13 @@ export default function Services() {
             {/* ============================================================= */}
             <section id="non-ducted" className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
                         <div>
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="text-accent font-black text-sm tracking-[0.2em] uppercase">03</span>
                                 <div className="h-px w-12 bg-accent/30"></div>
                             </div>
-                            <h2 className="text-3xl md:text-5xl font-black text-primary mb-8 leading-tight">Non-Ducted Systems</h2>
+                            <h2 className="text-2xl md:text-4xl font-black text-primary mb-8 leading-tight">Non-Ducted Systems</h2>
 
                             <div className="mb-10">
                                 <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-4">Overview</h4>
@@ -229,26 +199,11 @@ export default function Services() {
                             </Link>
                         </div>
 
-                        <div className="bg-muted p-10 rounded-[2.5rem] border border-slate-50 shadow-xl">
-                            <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-6">Benefits</h4>
-                            <div className="space-y-6">
-                                {[
-                                    { title: "Quick Installation", desc: "Minimal structural requirements allow for rapid deployment." },
-                                    { title: "Cost Effective", desc: "Lower upfront investment compared to ducted systems while delivering excellent performance." },
-                                    { title: "Flexible Placement", desc: "Can be installed in any room configuration without major civil work." },
-                                ].map((item, i) => (
-                                    <div key={i} className="flex gap-4 group">
-                                        <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-white flex items-center justify-center text-royal border border-slate-100 shadow-sm group-hover:bg-royal group-hover:text-white transition-all">
-                                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
-                                        </div>
-                                        <div>
-                                            <h5 className="font-black text-primary text-sm mb-1">{item.title}</h5>
-                                            <p className="text-xs text-slate-500 font-medium leading-relaxed">{item.desc}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+                        <ServiceBenefits items={[
+                            { title: "Quick Installation", desc: "Minimal structural requirements allow for rapid deployment." },
+                            { title: "Cost Effective", desc: "Lower upfront investment compared to ducted systems while delivering excellent performance." },
+                            { title: "Flexible Placement", desc: "Can be installed in any room configuration without major civil work." },
+                        ]} />
                     </div>
                 </div>
             </section>
@@ -260,13 +215,13 @@ export default function Services() {
             {/* ============================================================= */}
             <section id="vrv-vrf" className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-                        <div className="lg:order-2">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
+                        <div>
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="text-accent font-black text-sm tracking-[0.2em] uppercase">04</span>
                                 <div className="h-px w-12 bg-accent/30"></div>
                             </div>
-                            <h2 className="text-3xl md:text-5xl font-black text-primary mb-8 leading-tight">VRV / VRF / Multi-V Systems</h2>
+                            <h2 className="text-2xl md:text-4xl font-black text-primary mb-8 leading-tight">VRV / VRF / Multi-V Systems</h2>
 
                             <div className="mb-10">
                                 <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-4">Overview</h4>
@@ -304,26 +259,11 @@ export default function Services() {
                             </Link>
                         </div>
 
-                        <div className="lg:order-1 bg-muted p-10 rounded-[2.5rem] border border-slate-50 shadow-xl">
-                            <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-6">Benefits</h4>
-                            <div className="space-y-6">
-                                {[
-                                    { title: "Individual Zone Control", desc: "Each zone can be independently controlled for personalized comfort and efficiency." },
-                                    { title: "Reduced Energy Consumption", desc: "Inverter-driven compressors adjust output to match actual demand, cutting energy use significantly." },
-                                    { title: "Compact Design", desc: "Smaller outdoor units with lightweight piping reduce space requirements and installation complexity." },
-                                ].map((item, i) => (
-                                    <div key={i} className="flex gap-4 group">
-                                        <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-white flex items-center justify-center text-royal border border-slate-100 shadow-sm group-hover:bg-royal group-hover:text-white transition-all">
-                                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
-                                        </div>
-                                        <div>
-                                            <h5 className="font-black text-primary text-sm mb-1">{item.title}</h5>
-                                            <p className="text-xs text-slate-500 font-medium leading-relaxed">{item.desc}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+                        <ServiceBenefits items={[
+                            { title: "Individual Zone Control", desc: "Each zone can be independently controlled for personalized comfort and efficiency." },
+                            { title: "Reduced Energy Consumption", desc: "Inverter-driven compressors adjust output to match actual demand, cutting energy use significantly." },
+                            { title: "Compact Design", desc: "Smaller outdoor units with lightweight piping reduce space requirements and installation complexity." },
+                        ]} />
                     </div>
                 </div>
             </section>
@@ -335,13 +275,13 @@ export default function Services() {
             {/* ============================================================= */}
             <section id="process-chillers" className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
                         <div>
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="text-accent font-black text-sm tracking-[0.2em] uppercase">05</span>
                                 <div className="h-px w-12 bg-accent/30"></div>
                             </div>
-                            <h2 className="text-3xl md:text-5xl font-black text-primary mb-8 leading-tight">Industrial Process Chillers</h2>
+                            <h2 className="text-2xl md:text-4xl font-black text-primary mb-8 leading-tight">Industrial Process Chillers</h2>
 
                             <div className="mb-10">
                                 <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-4">Overview</h4>
@@ -379,26 +319,11 @@ export default function Services() {
                             </Link>
                         </div>
 
-                        <div className="bg-muted p-10 rounded-[2.5rem] border border-slate-50 shadow-xl">
-                            <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-6">Benefits</h4>
-                            <div className="space-y-6">
-                                {[
-                                    { title: "Precision Temperature Control", desc: "Maintain exact process temperatures critical for manufacturing quality." },
-                                    { title: "High Reliability", desc: "Built for 24/7 industrial operation with minimal downtime." },
-                                    { title: "Custom Engineering", desc: "Tailored chiller solutions designed to match specific process requirements." },
-                                ].map((item, i) => (
-                                    <div key={i} className="flex gap-4 group">
-                                        <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-white flex items-center justify-center text-royal border border-slate-100 shadow-sm group-hover:bg-royal group-hover:text-white transition-all">
-                                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
-                                        </div>
-                                        <div>
-                                            <h5 className="font-black text-primary text-sm mb-1">{item.title}</h5>
-                                            <p className="text-xs text-slate-500 font-medium leading-relaxed">{item.desc}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+                        <ServiceBenefits items={[
+                            { title: "Precision Temperature Control", desc: "Maintain exact process temperatures critical for manufacturing quality." },
+                            { title: "High Reliability", desc: "Built for 24/7 industrial operation with minimal downtime." },
+                            { title: "Custom Engineering", desc: "Tailored chiller solutions designed to match specific process requirements." },
+                        ]} />
                     </div>
                 </div>
             </section>
@@ -410,8 +335,8 @@ export default function Services() {
             {/* ============================================================= */}
             <section id="refrigeration" className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-                        <div className="lg:order-2">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
+                        <div>
                             <ServiceHeader num="06" title="Commercial Refrigeration" />
                             <div className="mb-10">
                                 <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-4">Overview</h4>
@@ -423,13 +348,11 @@ export default function Services() {
                             <ServiceFeatures items={["Walk-in Coolers", "Blast Freezers", "Display Cabinets", "Cold Storage Plants", "Temperature Monitoring", "Energy Recovery"]} />
                             <ServiceCTA />
                         </div>
-                        <div className="lg:order-1">
-                            <ServiceBenefits items={[
-                                { title: "Temperature Accuracy", desc: "Precise temperature maintenance ensuring product safety and quality." },
-                                { title: "Energy Efficient", desc: "Modern compressors and insulation reduce running costs significantly." },
-                                { title: "Compliance Ready", desc: "Systems designed to meet all food safety and cold chain regulations." },
-                            ]} />
-                        </div>
+                        <ServiceBenefits items={[
+                            { title: "Temperature Accuracy", desc: "Precise temperature maintenance ensuring product safety and quality." },
+                            { title: "Energy Efficient", desc: "Modern compressors and insulation reduce running costs significantly." },
+                            { title: "Compliance Ready", desc: "Systems designed to meet all food safety and cold chain regulations." },
+                        ]} />
                     </div>
                 </div>
             </section>
@@ -441,7 +364,7 @@ export default function Services() {
             {/* ============================================================= */}
             <section id="water-coolers" className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
                         <div>
                             <ServiceHeader num="07" title="Industrial Water Coolers" />
                             <div className="mb-10">
@@ -454,13 +377,11 @@ export default function Services() {
                             <ServiceFeatures items={["Stainless Steel Build", "UV Purification", "Auto Temperature Control", "Bulk Cooling Capacity", "Low Maintenance", "Energy Efficient"]} />
                             <ServiceCTA />
                         </div>
-                        <div>
-                            <ServiceBenefits items={[
-                                { title: "High Capacity", desc: "Designed to serve hundreds of people in large facility environments." },
-                                { title: "Durable Build", desc: "Industrial-grade stainless steel construction for long service life." },
-                                { title: "Low Maintenance", desc: "Simple, robust design minimizes servicing requirements." },
-                            ]} />
-                        </div>
+                        <ServiceBenefits items={[
+                            { title: "High Capacity", desc: "Designed to serve hundreds of people in large facility environments." },
+                            { title: "Durable Build", desc: "Industrial-grade stainless steel construction for long service life." },
+                            { title: "Low Maintenance", desc: "Simple, robust design minimizes servicing requirements." },
+                        ]} />
                     </div>
                 </div>
             </section>
@@ -472,8 +393,8 @@ export default function Services() {
             {/* ============================================================= */}
             <section id="duct-work" className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-                        <div className="lg:order-2">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
+                        <div>
                             <ServiceHeader num="08" title="Duct Work" />
                             <div className="mb-10">
                                 <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-4">Overview</h4>
@@ -485,13 +406,11 @@ export default function Services() {
                             <ServiceFeatures items={["GI Ducting", "Pre-Insulated Panels", "Flexible Ducts", "Fire Rated Ducts", "Acoustic Lining", "Precision Fabrication"]} />
                             <ServiceCTA />
                         </div>
-                        <div className="lg:order-1">
-                            <ServiceBenefits items={[
-                                { title: "Minimal Air Leakage", desc: "Precision-sealed joints ensure maximum airflow efficiency." },
-                                { title: "Noise Reduction", desc: "Acoustic insulation for a quiet, comfortable environment." },
-                                { title: "Energy Savings", desc: "Proper insulation reduces thermal losses and lowers operational costs." },
-                            ]} />
-                        </div>
+                        <ServiceBenefits items={[
+                            { title: "Minimal Air Leakage", desc: "Precision-sealed joints ensure maximum airflow efficiency." },
+                            { title: "Noise Reduction", desc: "Acoustic insulation for a quiet, comfortable environment." },
+                            { title: "Energy Savings", desc: "Proper insulation reduces thermal losses and lowers operational costs." },
+                        ]} />
                     </div>
                 </div>
             </section>
@@ -503,7 +422,7 @@ export default function Services() {
             {/* ============================================================= */}
             <section id="ventilation" className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
                         <div>
                             <ServiceHeader num="09" title="Ventilation Systems" />
                             <div className="mb-10">
@@ -526,13 +445,11 @@ export default function Services() {
                             <ServiceFeatures items={["Supply Fans", "Exhaust Fans", "Energy Recovery Ventilators", "Smoke Management Systems", "CO2 Sensors", "BMS Integration"]} />
                             <ServiceCTA />
                         </div>
-                        <div>
-                            <ServiceBenefits items={[
-                                { title: "Improved Air Quality", desc: "Continuous fresh air supply for a healthy indoor environment." },
-                                { title: "Code Compliance", desc: "Designed to meet all fire safety and building ventilation codes." },
-                                { title: "Energy Recovery", desc: "Heat recovery ventilators reduce energy waste from exhaust air." },
-                            ]} />
-                        </div>
+                        <ServiceBenefits items={[
+                            { title: "Improved Air Quality", desc: "Continuous fresh air supply for a healthy indoor environment." },
+                            { title: "Code Compliance", desc: "Designed to meet all fire safety and building ventilation codes." },
+                            { title: "Energy Recovery", desc: "Heat recovery ventilators reduce energy waste from exhaust air." },
+                        ]} />
                     </div>
                 </div>
             </section>
@@ -544,8 +461,8 @@ export default function Services() {
             {/* ============================================================= */}
             <section id="hvac-project" className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-                        <div className="lg:order-2">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
+                        <div>
                             <ServiceHeader num="10" title="HVAC Project Execution" />
                             <div className="mb-10">
                                 <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-4">Overview</h4>
@@ -566,13 +483,11 @@ export default function Services() {
                             </div>
                             <ServiceCTA />
                         </div>
-                        <div className="lg:order-1">
-                            <ServiceBenefits items={[
-                                { title: "Single Point Responsibility", desc: "One team managing design, procurement, installation, and commissioning." },
-                                { title: "Timeline Adherence", desc: "Strict project scheduling with milestone tracking and progress reporting." },
-                                { title: "Quality Assurance", desc: "Multi-level quality checks and testing at every project phase." },
-                            ]} />
-                        </div>
+                        <ServiceBenefits items={[
+                            { title: "Single Point Responsibility", desc: "One team managing design, procurement, installation, and commissioning." },
+                            { title: "Timeline Adherence", desc: "Strict project scheduling with milestone tracking and progress reporting." },
+                            { title: "Quality Assurance", desc: "Multi-level quality checks and testing at every project phase." },
+                        ]} />
                     </div>
                 </div>
             </section>
@@ -584,7 +499,7 @@ export default function Services() {
             {/* ============================================================= */}
             <section id="amc" className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
                         <div>
                             <ServiceHeader num="11" title="Maintenance of HVAC Systems (AMC)" />
                             <div className="mb-10">
@@ -608,32 +523,12 @@ export default function Services() {
                                 Request AMC Contract <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </Link>
                         </div>
-                        <div>
-                            <div className="bg-primary p-10 rounded-[2.5rem] shadow-xl relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-full -mr-32 -mt-32 blur-3xl"></div>
-                                <div className="relative z-10">
-                                    <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-8">Why AMC Matters</h4>
-                                    <div className="space-y-6">
-                                        {[
-                                            { title: "Reduce Downtime", desc: "Preventive maintenance catches issues before they become failures." },
-                                            { title: "Lower Energy Bills", desc: "Optimized systems consume significantly less energy." },
-                                            { title: "Extend Equipment Life", desc: "Regular servicing adds years to your HVAC equipment lifespan." },
-                                            { title: "Ensure Regulatory Compliance", desc: "Stay audit-ready with documented maintenance records and certifications." },
-                                        ].map((item, i) => (
-                                            <div key={i} className="flex gap-4 group">
-                                                <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-primary transition-all">
-                                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
-                                                </div>
-                                                <div>
-                                                    <h5 className="font-black text-white text-sm mb-1">{item.title}</h5>
-                                                    <p className="text-xs text-white/40 font-medium leading-relaxed">{item.desc}</p>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <ServiceBenefits items={[
+                            { title: "Reduce Downtime", desc: "Preventive maintenance catches issues before they become failures." },
+                            { title: "Lower Energy Bills", desc: "Optimized systems consume significantly less energy." },
+                            { title: "Extend Equipment Life", desc: "Regular servicing adds years to your HVAC equipment lifespan." },
+                            { title: "Ensure Regulatory Compliance", desc: "Stay audit-ready with documented maintenance records and certifications." },
+                        ]} />
                     </div>
                 </div>
             </section>
@@ -666,7 +561,7 @@ function ServiceHeader({ num, title }: { num: string; title: string }) {
                 <span className="text-accent font-black text-sm tracking-[0.2em] uppercase">{num}</span>
                 <div className="h-px w-12 bg-accent/30"></div>
             </div>
-            <h2 className="text-3xl md:text-5xl font-black text-primary mb-8 leading-tight">{title}</h2>
+            <h2 className="text-2xl md:text-4xl font-black text-primary mb-8 leading-tight">{title}</h2>
         </>
     );
 }
@@ -705,7 +600,7 @@ function ServiceFeatures({ items }: { items: string[] }) {
 
 function ServiceBenefits({ items }: { items: { title: string; desc: string }[] }) {
     return (
-        <div className="bg-muted p-10 rounded-[2.5rem] border border-slate-50 shadow-xl">
+        <div className="bg-muted p-10 rounded-[2.5rem] border border-slate-50 shadow-xl h-full flex flex-col justify-center">
             <h4 className="text-xs font-black text-accent uppercase tracking-[0.25em] mb-6">Benefits</h4>
             <div className="space-y-6">
                 {items.map((item, i) => (

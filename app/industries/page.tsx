@@ -129,7 +129,7 @@ export default function Industries() {
 
                 <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
                     <span className="text-accent font-black tracking-[0.3em] text-sm uppercase mb-6 block animate-fade-in-up">Industries</span>
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-8 animate-reveal">
+                    <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-8 animate-reveal">
                         Serving <span className="text-gradient-accent">Every</span> <br className="hidden md:block" /> Industry with Precision
                     </h1>
                     <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto font-medium animate-fade-in-up delay-200">
@@ -195,7 +195,7 @@ export default function Industries() {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <span className="text-accent font-black tracking-[0.3em] text-sm uppercase mb-4 block">The Cool Air Advantage</span>
-                        <h2 className="text-3xl md:text-5xl font-black text-primary">Why Choose Us?</h2>
+                        <h2 className="text-3xl md:text-4xl font-black text-primary">Why Choose Us?</h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
@@ -230,7 +230,7 @@ export default function Industries() {
                 <div className="max-w-5xl mx-auto bg-primary rounded-[4rem] text-center p-12 md:p-24 relative overflow-hidden shadow-2xl">
                     <div className="absolute inset-0 bg-gradient-to-br from-royal via-primary to-accent opacity-40"></div>
                     <div className="relative z-10">
-                        <h2 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">Don&apos;t See Your Industry?</h2>
+                        <h2 className="text-3xl md:text-4xl font-black text-white mb-6 leading-tight">Don&apos;t See Your Industry?</h2>
                         <p className="text-white/60 text-lg font-medium mb-10 max-w-2xl mx-auto">We engineer custom HVAC solutions for every sector. Reach out and let us understand your requirements.</p>
                         <Link href="/contact" className="inline-block px-12 py-5 bg-white text-primary font-black text-xl rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-2xl">
                             Contact Us →

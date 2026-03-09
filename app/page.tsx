@@ -31,7 +31,7 @@ export default function Home() {
               <span className="text-white/80 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase">Daikin Authorized Partner Since 1993</span>
             </div>
 
-            <h1 className="text-2xl md:text-6xl lg:text-5xl font-black text-white leading-[1.05] mb-8 animate-reveal">
+            <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-8 animate-reveal">
               Engineering <span className="text-gradient-accent">Intelligent</span> HVAC <br className="hidden md:block" /> Solutions for Every Industry
             </h1>
 
@@ -51,37 +51,59 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- SECTION 2: WHO WE ARE --- */}
+      {/* --- WHO WE ARE --- */}
       <section className="py-24 bg-white relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-muted/20 -skew-x-12 translate-x-32 z-0 hidden lg:block"></div>
+        <div className="max-w-7xl mx-auto px-4 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="animate-fade-in-up">
-            <span className="text-accent font-black tracking-[0.25em] text-sm uppercase mb-4 block">Section 2: Who We Are</span>
-            <h2 className="text-3xl md:text-5xl font-black text-primary mb-8 leading-tight">
-              Your Trusted HVAC <br className="hidden md:block" /> Engineering Partner
+            <div className="flex items-center gap-3 mb-6">
+              <span className="text-royal font-black text-sm tracking-[0.3em] uppercase">Who We Are</span>
+              <div className="h-px w-12 bg-royal/30"></div>
+            </div>
+
+            <h2 className="text-3xl md:text-4xl font-black text-primary mb-8 leading-tight">
+              Dedicated to <br /> <span className="text-gradient-royal">Engineering Excellence</span>
             </h2>
-            <p className="text-lg text-slate-600 leading-relaxed font-medium mb-10">
-              Cool Air System specializes in comprehensive HVAC design, installation, and maintenance solutions across commercial, industrial, and institutional sectors. With deep technical expertise and project execution excellence, we deliver energy-efficient, scalable, and compliant climate control systems tailored to modern infrastructure demands.
+            <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium mb-10 max-w-xl">
+              Cool Air System is more than just an HVAC provider. We are your technical partners in creating sustainable, high-performance environments. With three decades of field-tested expertise, we specialize in the design and execution of complex mechanical engineering solutions across India.
             </p>
-            <div className="grid grid-cols-2 gap-8 border-t border-slate-100 pt-10">
-              <div>
-                <span className="text-4xl font-black text-royal block mb-1">30+</span>
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Years of Experience</span>
+
+            <div className="grid grid-cols-2 gap-10 mb-12">
+              <div className="relative group">
+                <span className="text-5xl md:text-6xl font-black text-primary block mb-2 group-hover:text-royal transition-colors">30+</span>
+                <div className="h-1.5 w-12 bg-accent mb-4"></div>
+                <span className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] leading-tight block">Years of Industrial <br /> Legacy</span>
               </div>
-              <div>
-                <span className="text-4xl font-black text-royal block mb-1">750+</span>
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Projects Executed</span>
+              <div className="relative group">
+                <span className="text-5xl md:text-6xl font-black text-primary block mb-2 group-hover:text-royal transition-colors">750+</span>
+                <div className="h-1.5 w-12 bg-accent mb-4"></div>
+                <span className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] leading-tight block">Successful Large <br /> Scale Projects</span>
               </div>
             </div>
+
+            <Link href="/about" className="inline-flex items-center gap-4 text-primary font-black uppercase tracking-widest text-sm hover:text-royal transition-all group">
+              Our Full Story <span className="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all">→</span>
+            </Link>
           </div>
-          <div className="relative group rounded-[3rem] overflow-hidden shadow-2xl animate-fade-in-up delay-200">
-            <Image
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1200"
-              alt="Professional Engineering"
-              width={1200}
-              height={800}
-              className="w-full object-cover aspect-[4/5] group-hover:scale-105 transition-transform duration-1000"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+
+          <div className="relative lg:pl-10">
+            <div className="absolute -top-10 -left-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
+            <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-royal/10 rounded-full blur-3xl -z-10 animate-pulse delay-700"></div>
+
+            <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl animate-fade-in-up delay-200 aspect-[4/5] lg:aspect-square group">
+              <Image
+                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1200"
+                alt="HVAC Engineering Excellence"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-1000"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-60"></div>
+              <div className="absolute bottom-10 left-10 right-10">
+                <div className="glass-panel-dark p-6 rounded-2xl border-white/10 backdrop-blur-md">
+                  <p className="text-white font-bold text-lg leading-snug italic">"Precision in every joint, excellence in every calculation."</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -91,7 +113,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-20 animate-fade-in-up">
             <span className="text-accent font-black tracking-[0.25em] text-sm uppercase mb-4 block">Our Expertise</span>
-            <h2 className="text-3xl md:text-5xl font-black text-primary mb-6">Our Core Services Overview</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-primary mb-6">Our Core Services Overview</h2>
             <p className="text-slate-500 font-medium">Precision engineering for high-performance climate control across all major system architectures.</p>
           </div>
 
@@ -156,7 +178,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16 animate-fade-in-up">
             <div className="max-w-2xl">
               <span className="text-royal font-black tracking-[0.25em] text-sm uppercase mb-4 block">Our Impact</span>
-              <h2 className="text-3xl md:text-5xl font-black text-primary leading-tight">Industries We Serve</h2>
+              <h2 className="text-3xl md:text-4xl font-black text-primary leading-tight">Industries We Serve</h2>
             </div>
             <div className="h-px bg-slate-100 flex-grow hidden md:block mx-12 mb-6"></div>
           </div>
@@ -180,7 +202,7 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-4">
           <div className="text-center mb-20 animate-fade-in-up">
             <span className="text-accent font-black tracking-[0.25em] text-sm uppercase mb-4 block">Advantage</span>
-            <h2 className="text-3xl md:text-5xl font-black text-white mb-6">Why Cool Air System?</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-6">Why Cool Air System?</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -199,7 +221,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-20 animate-fade-in-up">
             <span className="text-royal font-black tracking-[0.25em] text-sm uppercase mb-4 block">Portfolio</span>
-            <h2 className="text-3xl md:text-5xl font-black text-primary">Project Showcase</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-primary">Project Showcase</h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -251,7 +273,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center gap-20">
           <div className="lg:w-1/2">
             <span className="text-accent font-black tracking-[0.25em] text-sm uppercase mb-4 block">Life Cycle Support</span>
-            <h2 className="text-3xl md:text-5xl font-black text-primary mb-8 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-black text-primary mb-8 leading-tight">
               Preventive Maintenance That <br /> Protects Your Investment
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed font-medium mb-10">
@@ -285,7 +307,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto bg-primary rounded-[4rem] text-center p-12 md:p-24 relative overflow-hidden shadow-2xl">
           <div className="absolute inset-0 bg-gradient-to-br from-royal via-primary to-accent opacity-40"></div>
           <div className="relative z-10">
-            <h2 className="text-3xl md:text-6xl font-black text-white mb-8 leading-tight">Ready to Optimize Your <br /> HVAC Infrastructure?</h2>
+            <h2 className="text-3xl md:text-5xl font-black text-white mb-8 leading-tight">Ready to Optimize Your <br /> HVAC Infrastructure?</h2>
             <Link href="/contact" className="inline-block px-12 py-5 bg-white text-primary font-black text-xl rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-2xl">
               Get Started →
             </Link>
@@ -298,14 +320,14 @@ export default function Home() {
 
 function ServiceBlock({ title, icon }: { title: string; icon: React.ReactNode }) {
   return (
-    <div className="group bg-white p-10 rounded-[2.5rem] shadow-xl border border-slate-50 hover:border-accent transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
-      <div className="text-royal mb-10 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
-        <div className="w-16 h-16 bg-muted rounded-2xl flex items-center justify-center p-3">
+    <div className="group bg-white p-5 rounded-[2rem] shadow-xl border border-slate-50 hover:border-accent transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+      <div className="text-royal mb-4 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
+        <div className="w-14 h-14 bg-muted rounded-xl flex items-center justify-center p-3">
           {icon}
         </div>
       </div>
-      <h4 className="text-xl font-black text-primary leading-tight group-hover:text-royal transition-colors">{title}</h4>
-      <div className="h-1 w-0 bg-accent mt-6 group-hover:w-full transition-all duration-500"></div>
+      <h4 className="text-base font-black text-primary leading-tight group-hover:text-royal transition-colors">{title}</h4>
+      <div className="h-0.5 w-0 bg-accent mt-3 group-hover:w-full transition-all duration-500"></div>
     </div>
   );
 }

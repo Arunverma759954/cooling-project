@@ -12,11 +12,13 @@ export default function Footer() {
                     {/* Brand Section */}
                     <div className="md:col-span-4">
                         <Link href="/" className="inline-block group mb-8">
-                            <div className="bg-white/95 p-4 rounded-2xl transition-transform duration-300 group-hover:scale-105 shadow-xl">
-                                <img
-                                    src="/logo cool aur  (1).png"
+                            <div className="bg-white/95 p-3 rounded-2xl transition-transform duration-300 group-hover:scale-105 shadow-xl">
+                                <Image
+                                    src="/cool-logo (1).png"
                                     alt="Cool Air System Logo"
-                                    className="h-16 sm:h-20 md:h-24 w-auto object-contain"
+                                    width={180}
+                                    height={70}
+                                    className="h-12 md:h-14 w-auto object-contain"
                                 />
                             </div>
                         </Link>
