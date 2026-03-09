@@ -44,16 +44,12 @@ export default function Navbar() {
                 <div className="flex justify-between items-center">
                     {/* Brand Logo */}
                     <div className="shrink-0 flex items-center">
-                        <Link href="/" className="flex items-center group">
-                            <div className="relative h-12 w-48 sm:h-14 sm:w-56 md:h-16 md:w-64 transition-transform duration-300 group-hover:scale-105">
-                                <Image
-                                    src="/logo cool aur  (1).png"
-                                    alt="Cool Air System Logo"
-                                    fill
-                                    className="object-contain"
-                                    priority
-                                />
-                            </div>
+                        <Link href="/" className="flex items-center group py-2">
+                            <img
+                                src="/logo cool aur  (1).png"
+                                alt="Cool Air System Logo"
+                                className="h-16 sm:h-20 md:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                            />
                         </Link>
                     </div>
 

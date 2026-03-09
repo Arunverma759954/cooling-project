@@ -11,14 +11,12 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-16">
                     {/* Brand Section */}
                     <div className="md:col-span-4">
-                        <Link href="/" className="flex items-center group mb-8">
-                            <div className="relative h-14 w-56 md:h-20 md:w-72 transition-transform duration-300 group-hover:scale-105">
-                                <Image
+                        <Link href="/" className="inline-block group mb-8">
+                            <div className="bg-white/95 p-4 rounded-2xl transition-transform duration-300 group-hover:scale-105 shadow-xl">
+                                <img
                                     src="/logo cool aur  (1).png"
                                     alt="Cool Air System Logo"
-                                    fill
-                                    className="object-contain"
-                                    priority
+                                    className="h-16 sm:h-20 md:h-24 w-auto object-contain"
                                 />
                             </div>
                         </Link>
