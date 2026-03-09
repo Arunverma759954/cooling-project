@@ -43,15 +43,16 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
                     {/* Brand Logo */}
-                    <div className="shrink-0">
-                        <Link href="/" className="flex items-center gap-3 group">
-                            <div className="flex flex-col leading-tight">
-                                <span className="text-sm font-black tracking-[0.18em] text-red-600 uppercase">
-                                    COOL AIR SYSTEM
-                                </span>
-                                <span className="text-[0.6rem] font-medium tracking-[0.16em] text-black uppercase">
-                                    Capitalizing HVAC Demands
-                                </span>
+                    <div className="shrink-0 flex items-center">
+                        <Link href="/" className="flex items-center group">
+                            <div className="relative h-12 w-48 sm:h-14 sm:w-56 md:h-16 md:w-64 transition-transform duration-300 group-hover:scale-105">
+                                <Image
+                                    src="/logo cool aur  (1).png"
+                                    alt="Cool Air System Logo"
+                                    fill
+                                    className="object-contain"
+                                    priority
+                                />
                             </div>
                         </Link>
                     </div>
