@@ -8,7 +8,7 @@ export default function Services() {
             <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-primary pt-28 pb-20">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&q=80&w=2000"
+                        src="/1.webp"
                         alt="HVAC Services"
                         fill
                         className="object-cover opacity-20"

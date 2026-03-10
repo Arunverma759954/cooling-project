@@ -8,7 +8,7 @@ export default function About() {
             <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-primary pt-28 pb-20">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=2000"
+                        src="/6.webp"
                         alt="About Cool Air System"
                         fill
                         className="object-cover opacity-20"
@@ -63,7 +63,7 @@ export default function About() {
                         <div className="absolute -inset-4 bg-accent/10 rounded-[3rem] blur-2xl group-hover:bg-accent/20 transition-all duration-700"></div>
                         <div className="relative rounded-[3rem] overflow-hidden shadow-2xl">
                             <Image
-                                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1200"
+                                src="/5.webp"
                                 alt="HVAC Engineering Team"
                                 width={1200}
                                 height={900}

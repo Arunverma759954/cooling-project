@@ -13,7 +13,7 @@ export default function Contact() {
             <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden bg-primary pt-28 pb-16">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=2000"
+                        src="/1.webp"
                         alt="Contact Cool Air System"
                         fill
                         className="object-cover opacity-15"

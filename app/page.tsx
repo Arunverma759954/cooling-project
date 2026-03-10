@@ -9,7 +9,7 @@ export default function Home() {
         {/* Background Layer */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&q=80&w=2000"
+            src="/1.webp"
             alt="Industrial HVAC Infrastructure"
             fill
             className="object-cover opacity-30 scale-105 animate-float"
@@ -92,7 +92,7 @@ export default function Home() {
 
             <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl animate-fade-in-up delay-200 aspect-[4/5] lg:aspect-square group">
               <Image
-                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1200"
+                src="/2.webp"
                 alt="HVAC Engineering Excellence"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-1000"
@@ -229,7 +229,7 @@ export default function Home() {
               <div className="flex flex-col gap-6">
                 <div className="w-full h-80 rounded-3xl overflow-hidden mb-4">
                   <Image
-                    src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200"
+                    src="/6.webp"
                     alt="Project"
                     width={800}
                     height={600}
