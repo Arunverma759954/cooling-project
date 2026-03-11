@@ -40,7 +40,6 @@ export default function Footer() {
                                 <FooterLink href="/" label="Home" />
                                 <FooterLink href="/about" label="About Us" />
                                 <FooterLink href="/services" label="Services" />
-                                <FooterLink href="/industries" label="Industries We Serve" />
                                 <FooterLink href="/contact" label="Contact" />
                             </ul>
                         </div>
@@ -56,10 +55,7 @@ export default function Footer() {
                         <div className="col-span-2 sm:col-span-1">
                             <h4 className="text-sm font-black uppercase tracking-widest text-accent mb-8">Contact</h4>
                             <ul className="space-y-6">
-                                <li className="flex gap-4 group">
-                                    <div className="text-accent shrink-0 mt-1"><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg></div>
-                                    <p className="text-white/60 font-medium group-hover:text-white transition-colors">NAMIT SHARMA</p>
-                                </li>
+
                                 <li className="flex gap-4 group">
                                     <div className="text-accent shrink-0 mt-1"><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div>
                                     <p className="text-white/60 font-medium group-hover:text-white transition-colors text-sm">Shop No- 120, FF, Krishna Palace, <br />Gurugram 122001</p>

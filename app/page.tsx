@@ -23,13 +23,7 @@ export default function Home() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel-dark mb-8 animate-fade-in-up">
-              <span className="flex h-2 w-2 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
-              </span>
-              <span className="text-white/80 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase">Daikin Authorized Partner Since 1993</span>
-            </div>
+
 
             <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-8 animate-reveal">
               Engineering <span className="text-gradient-accent">Intelligent</span> HVAC <br className="hidden md:block" /> Solutions for Every Industry
@@ -56,30 +50,18 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-1/3 h-full bg-muted/20 -skew-x-12 translate-x-32 z-0 hidden lg:block"></div>
         <div className="max-w-7xl mx-auto px-4 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="animate-fade-in-up">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center gap-2 mb-6">
               <span className="text-royal font-black text-sm tracking-[0.3em] uppercase">Who We Are</span>
               <div className="h-px w-12 bg-royal/30"></div>
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-black text-primary mb-8 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-black text-primary mb-4 leading-tight">
               Dedicated to <br /> <span className="text-gradient-royal">Engineering Excellence</span>
             </h2>
-            <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium mb-10 max-w-xl">
+            <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium mb-3 max-w-xl">
               Cool Air System is more than just an HVAC provider. We are your technical partners in creating sustainable, high-performance environments. With three decades of field-tested expertise, we specialize in the design and execution of complex mechanical engineering solutions across India.
             </p>
 
-            <div className="grid grid-cols-2 gap-10 mb-12">
-              <div className="relative group">
-                <span className="text-5xl md:text-6xl font-black text-primary block mb-2 group-hover:text-royal transition-colors">30+</span>
-                <div className="h-1.5 w-12 bg-accent mb-4"></div>
-                <span className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] leading-tight block">Years of Industrial <br /> Legacy</span>
-              </div>
-              <div className="relative group">
-                <span className="text-5xl md:text-6xl font-black text-primary block mb-2 group-hover:text-royal transition-colors">750+</span>
-                <div className="h-1.5 w-12 bg-accent mb-4"></div>
-                <span className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] leading-tight block">Successful Large <br /> Scale Projects</span>
-              </div>
-            </div>
 
             <Link href="/about" className="inline-flex items-center gap-4 text-primary font-black uppercase tracking-widest text-sm hover:text-royal transition-all group">
               Our Full Story <span className="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all">→</span>
